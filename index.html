@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(27, 6, 41);">
+    <button type="button" onclick="show()" id="btnID" style="border-radius: 50%; height: 50px; width: 50px; background-color: gold; margin-top: 100px; margin-left: 170px">GO</button>
+    <h1 id="h1" style="color: bisque; text-align: center; width: 380px">
+        <marquee behavior="alternative" direction="left">
+            Click Here
+        </marquee>
+        <marquee behavior="alternative" direction="right">
+            And See The Magic
+        </marquee>
+    </h1>
+    <div>
+
+        <img hidden id="image" src="holi.gif" alt="gif" style="height: 200px; width: 200px; margin-left: 100px; margin-top: 150px">
+        <audio id="audio" hidden src="war(256k).mp3"></audio>
+    </div>
+    <script>
+        function show() {
+            document.getElementById('image').style.display = "block";
+            var audio = document.getElementById("audio");
+            audio.play()
+            document.getElementById('btnID').style.display = "none";
+            document.getElementById('h1').style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
